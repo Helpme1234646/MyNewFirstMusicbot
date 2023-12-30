@@ -17,7 +17,7 @@ from DAXXMUSIC.utils.inline.play import close_keyboard
 from DAXXMUSIC.utils.inline.playlist import (botplaylist_markup,
                                               get_playlist_markup,
                                               warning_markup)
-from DAXXMUSIC.utils.pastebin import Vipbin
+from DAXXMUSIC.utils.pastebin import DAXXBin
 from DAXXMUSIC.utils.stream.stream import stream
 
 # Command
