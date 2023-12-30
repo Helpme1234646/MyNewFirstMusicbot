@@ -74,10 +74,8 @@ def stream_markup_timer(_, chat_id, played, dur):
 
             ),
             InlineKeyboardButton(
-
-                text="💌 ɢʀᴏᴜᴘ",
-
-                url=f"{SUPPORT_CHAT}",
+                text="🎶 ᴩʟᴀʏʟɪsᴛ 🎶",
+                callback_data=f"add_playlist {videoid}",
 
             ),
         ],
