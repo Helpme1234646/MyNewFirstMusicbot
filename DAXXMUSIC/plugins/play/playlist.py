@@ -7,7 +7,6 @@ from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 
 from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
-from strings import get_command
 from DAXXMUSIC import Carbon, YouTube, app
 from DAXXMUSIC.utils.database import (delete_playlist, get_playlist,
                                        get_playlist_names,
@@ -20,13 +19,9 @@ from DAXXMUSIC.utils.inline.playlist import (botplaylist_markup,
 from DAXXMUSIC.utils.pastebin import DAXXBin
 from DAXXMUSIC.utils.stream.stream import stream
 
-# Command
-PLAYLIST_COMMAND = get_command("PLAYLIST_COMMAND")
-DELETEPLAYLIST_COMMAND = get_command("DELETEPLAYLIST_COMMAND")
-
 
 @app.on_message(
-    filters.command(PLAYLIST_COMMAND)
+    filters.command(playlist)
     & ~BANNED_USERS
 )
 @language
@@ -60,7 +55,7 @@ async def check_playlist(client, message: Message, _):
 
 
 @app.on_message(
-    filters.command(DELETEPLAYLIST_COMMAND)
+    filters.command(delete_playlist)
     & filters.group
     & ~BANNED_USERS
 )
@@ -106,7 +101,7 @@ async def get_keyboard(_, user_id):
 
 
 @app.on_message(
-    filters.command(DELETEPLAYLIST_COMMAND)
+    filters.command(DELETEPLAYLIST)
     & filters.private
     & ~BANNED_USERS
 )
