@@ -12,7 +12,6 @@ from DAXXMUSIC.utils.database import (delete_playlist, get_playlist,
                                        get_playlist_names,
                                        save_playlist)
 from DAXXMUSIC.utils.decorators.language import language, languageCB
-from DAXXMUSIC.utils.inline.play import close_keyboard
 from DAXXMUSIC.utils.inline.playlist import (botplaylist_markup,
                                               get_playlist_markup,
                                               warning_markup)
