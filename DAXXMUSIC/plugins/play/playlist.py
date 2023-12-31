@@ -18,8 +18,6 @@ from DAXXMUSIC.utils.inline.playlist import (botplaylist_markup,
 from DAXXMUSIC.utils.pastebin import DAXXBin
 from DAXXMUSIC.utils.stream.stream import stream
 
-
-def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
 @app.on_message(filters.command("playlist"))
 @language
 async def check_playlist(client, message: Message, _):
