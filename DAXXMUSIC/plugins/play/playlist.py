@@ -19,13 +19,10 @@ from DAXXMUSIC.utils.inline.playlist import (botplaylist_markup,
 from DAXXMUSIC.utils.pastebin import DAXXBin
 from DAXXMUSIC.utils.stream.stream import stream
 
-# Command
-PLAYLIST_COMMAND = get_command("PLAYLIST_COMMAND")
-DELETEPLAYLIST_COMMAND = get_command("DELETEPLAYLIST_COMMAND")
 
 
 @app.on_message(
-    filters.command(PLAYLIST_COMMAND)
+    filters.command(PLAYLIST)
     & ~BANNED_USERS
 )
 @language
@@ -59,7 +56,7 @@ async def check_playlist(client, message: Message, _):
 
 
 @app.on_message(
-    filters.command(DELETEPLAYLIST_COMMAND)
+    filters.command(DELETE_PLAYLIST)
     & filters.group
     & ~BANNED_USERS
 )
@@ -105,7 +102,7 @@ async def get_keyboard(_, user_id):
 
 
 @app.on_message(
-    filters.command(DELETEPLAYLIST_COMMAND)
+    filters.command(DELETE_PLAYLIST)
     & filters.private
     & ~BANNED_USERS
 )
