@@ -21,7 +21,7 @@ from DAXXMUSIC.utils.stream.stream import stream
 
 
 @app.on_message(
-    filters.command(PLAYLIST)
+    filters.command(playlist)
     & ~BANNED_USERS
 )
 @language
@@ -55,7 +55,7 @@ async def check_playlist(client, message: Message, _):
 
 
 @app.on_message(
-    filters.command(DELETE_PLAYLIST)
+    filters.command(delete_playlist)
     & filters.group
     & ~BANNED_USERS
 )
@@ -101,7 +101,7 @@ async def get_keyboard(_, user_id):
 
 
 @app.on_message(
-    filters.command(DELETE_PLAYLIST)
+    filters.command(delete_playlist)
     & filters.private
     & ~BANNED_USERS
 )
