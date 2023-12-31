@@ -51,11 +51,9 @@ async def check_playlist(client, message: Message, _):
     )
 
 
-@app.on_message(
-    filters.command(delete_playlist)
-    & filters.group
-    & ~BANNED_USERS
-)
+@app.on_message(filters.command("delete_playlist"))
+    
+  
 @language
 async def del_group_message(client, message: Message, _):
     upl = InlineKeyboardMarkup(
@@ -97,11 +95,7 @@ async def get_keyboard(_, user_id):
     return keyboard, count
 
 
-@app.on_message(
-    filters.command(delete_playlist)
-    & filters.private
-    & ~BANNED_USERS
-)
+@app.on_message(filters.command("delete_playlist"))
 @language
 async def del_plist_msg(client, message: Message, _):
     _playlist = await get_playlist_names(message.from_user.id)
