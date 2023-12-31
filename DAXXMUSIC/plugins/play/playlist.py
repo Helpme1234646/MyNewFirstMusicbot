@@ -3,7 +3,6 @@ from random import randint
 
 from pykeyboard import InlineKeyboard
 from pyrogram import filters
-from strings import get_command
 from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 
