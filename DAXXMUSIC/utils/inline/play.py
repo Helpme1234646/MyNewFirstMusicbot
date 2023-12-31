@@ -1,7 +1,7 @@
 from pyrogram.types import InlineKeyboardButton
 
 import config
-from DAXXMUSIC.utils import time_to_sec
+from DAXXMUSIC.utils.formatters import time_to_seconds
 
 
 def stream_markup_timer(_, videoid, chat_id, played, dur):
