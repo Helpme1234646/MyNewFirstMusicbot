@@ -20,10 +20,7 @@ from DAXXMUSIC.utils.stream.stream import stream
 
 
 
-@app.on_message(
-    filters.command(playlist)
-    & ~BANNED_USERS
-)
+@app.on_message(filters.command("playlist"))
 @language
 async def check_playlist(client, message: Message, _):
     _playlist = await get_playlist_names(message.from_user.id)
