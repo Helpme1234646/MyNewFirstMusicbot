@@ -177,6 +177,26 @@ queue_8 : "<b>{0} ᴘʟᴀʏᴇʀ</b>\n\n🎄 <b>sᴛʀᴇᴀᴍɪɴɢ :</b> {1}
 stream_1 : "➲ <b>Sᴛᴀʀᴛᴇᴅ Sᴛʀᴇᴀᴍɪɴɢ |</b>\n\n<b>‣ Tɪᴛʟᴇ :</b> <a href={0}>{1}</a>\n<b>‣ Dᴜʀᴀᴛɪᴏɴ :</b> {2} ᴍɪɴᴜᴛᴇs\n<b>‣ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ :</b> {3}"
 stream_2 : "➲ <b>Sᴛᴀʀᴛᴇᴅ Sᴛʀᴇᴀᴍɪɴɢ |</b>\n\n<b>‣ Sᴛʀᴇᴀᴍ ᴛʏᴘᴇ :</b> ʟɪᴠᴇ sᴛʀᴇᴀᴍ [ᴜʀʟ]\n<b>‣ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ :</b> {0}"
 
+#Playlist
+playlist_1 : "**Usage:** /play [Music Name or Youtube Link or Reply to Audio]\n\nIf you want to play Bot's Server Playlist! Press the button below."
+playlist_2 : "Getting your playlist. Please wait"
+playlist_3 : "You have no playlist on Bot's Server."
+playlist_4 : "Fetched Playlist:\n\n"
+playlist_5 :  "    Duration- {0} Mins"
+playlist_6 : "Contact me in PM for deletion of Playlists."
+playlist_7 : "Tracks Inside Playlist: {0}\n\nPress the Buttons to delete a particular track in your playlist.\n\nTo delete whole playlist: Press Del Whole Playlist button."
+playlist_8 : "Already Exists\n\nThis track exists in your playlist."
+playlist_9 : "Sorry! You can only have {0} music in a playlist."
+playlist_10 : "Playlist Addition\n\n{0}\nadded to your playlist."
+playlist_11 : "Successfully deleted your track."
+playlist_12 : "Failed to delete your track."
+playlist_13 : "Deleted your whole playlists from the server. "
+playlist_14 : "**Are you Sure you want to delete your whole playlist?**\n\nYou'll lost your playlist and this can't be recovered later."
+playlist_15 : "[Checkout Whole Playlist]({0})"
+playlist_16 : "Queued Playlist:"
+playlist_17 : "Queued Position-"
+playlist_18 : "[Checkout Whole Queued Playlist]({0})\n\nLast Queued Position : **{1}**"
+
 
 CLOSE_BUTTON  : "🗑ᴄʟᴏsᴇ🗑"
 BACK_BUTTON : "🔙ʙᴀᴄᴋ🔙"
